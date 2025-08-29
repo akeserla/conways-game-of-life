@@ -1,0 +1,72 @@
+### Game of Life API Test Requests
+
+# IMPORTANT: Execute requests in order!
+# 1. First run the "uploadBoard" request to create a board
+# 2. Set the value of boardId as a variable in this file below
+# 3. All GET requests will automatically use the stored boardId
+
+
+### 1. Upload Board State
+# @name uploadBoard
+# This automatically stores the boardId from the response
+POST {{baseUrl}}/api/GameOfLife/upload
+Content-Type: application/json
+
+{
+  "rows": 3,
+  "columns": 3,
+  "grid": [
+    [false, true, false],
+    [false, true, false],
+    [false, true, false]
+  ]
+}
+
+> {%
+  client.global.set("boardId", response.body.boardId);
+%}
+
+### 2. Get Next State (automatically uses stored boardId)
+GET {{baseUrl}}/api/GameOfLife/{{boardId}}/next
+
+### 3. Get N States Ahead (e.g., 5 generations)
+GET {{baseUrl}}/api/GameOfLife/{{boardId}}/advance/5
+
+### 4. Get Final State
+GET {{baseUrl}}/api/GameOfLife/{{boardId}}/final
+
+### Example: Blinker Pattern (Oscillator)
+POST {{baseUrl}}/api/GameOfLife/upload
+Content-Type: application/json
+
+{
+  "rows": 5,
+  "columns": 5,
+  "grid": [
+    [false, false, false, false, false],
+    [false, false, true, false, false],
+    [false, false, true, false, false],
+    [false, false, true, false, false],
+    [false, false, false, false, false]
+  ]
+}
+
+### Example: Block Pattern (Still Life)
+POST {{baseUrl}}/api/GameOfLife/upload
+Content-Type: application/json
+
+{
+  "rows": 4,
+  "columns": 4,
+  "grid": [
+    [false, false, false, false],
+    [false, true, true, false],
+    [false, true, true, false],
+    [false, false, false, false]
+  ]
+}
+
+### Variables
+@baseUrl = http://localhost:5122
+### Test with a specific boardId (uncomment to use)
+@boardId = 54663586-de92-4963-8d2f-765633e675dd

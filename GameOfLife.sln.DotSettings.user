@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AActivity_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F5a19c9afea6946a98b718a26551107ca74600_003Ff1_003F370f58e6_003FActivity_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=48297e8a_002Dd1af_002D42bf_002D96f4_002D6624252c2ad2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::86B23332-B2B2-4905-AAC1-FDF59792EA65::net9.0::GameOfLife.Tests.GameOfLifeControllerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::86B23332-B2B2-4905-AAC1-FDF59792EA65::net9.0::GameOfLife.Tests.GameOfLifeRulesTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::86B23332-B2B2-4905-AAC1-FDF59792EA65::net9.0::GameOfLife.Tests.GameOfLifeServiceTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
